@@ -15,10 +15,10 @@
     </head>
     <body>
 
+        <main>
+            @yeld('content')
+        </main>
 
-        <a href="http://127.0.0.1:8000/">
-            <img src="{{ Vite::asset("resources/img/boolean-logo.png")}}" alt="">
-        </a>
   
     </body>
 </html>
