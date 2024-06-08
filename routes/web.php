@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('home');
+    $cards = config("products.products");
+    // dd($cards);
+    return view('home', compact('cards'));
 })->name("home"); 
 
 

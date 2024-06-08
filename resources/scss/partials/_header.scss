@@ -1,7 +1,10 @@
 header {
 
+    background-color: orange;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     padding: 2em 5em;
 
     // rimuovo i puntini dalla lista
@@ -17,7 +20,7 @@ header {
     }
 
     .logo {
-        max-width: 15%;  
+        max-width: 10em;  
     }
 
     i {

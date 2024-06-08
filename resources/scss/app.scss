@@ -1,9 +1,9 @@
 // importo header.scss
 @use "./partials/header" as *;
+@use "./partials/main" as *;
+@use "./partials/footer" as *;
+
 
 // importo bootstrap
 @import "~bootstrap/scss/bootstrap.scss";
 
-body {
-    background-color: orange;
-}
