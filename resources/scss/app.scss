@@ -1,3 +1,7 @@
+// importo header.scss
+@use "./partials/header" as *;
+
+// importo bootstrap
 @import "~bootstrap/scss/bootstrap.scss";
 
 body {

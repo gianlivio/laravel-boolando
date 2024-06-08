@@ -1,0 +1,55 @@
+header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5em;
+
+    // rimuovo i puntini dalla lista
+    ul {
+        list-style: none;
+
+        // rimuovo lo stile blu dell'anchor tag
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+
+    .logo {
+        max-width: 15%;  
+    }
+
+    i {
+        color:white;
+    }
+
+    .icon-container {
+        position: relative;
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            z-index: 1;
+            min-width: 10em;
+
+            a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            a:hover {
+                background-color: #f1f1f1;
+            }
+        }
+
+        &:hover .dropdown-content {  //& è un comando sass che si riferisce al contenitore padre, fa le veci di .icon-container:hover
+            display: block;
+        }
+    }
+
+}
