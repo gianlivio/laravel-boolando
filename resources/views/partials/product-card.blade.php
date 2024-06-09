@@ -5,6 +5,12 @@
     <img src="{{ Vite::asset("resources/img/".$card["frontImage"]) }}"" alt="">
 
     {{-- icona cuore preferiti --}}
+
+    <div class="">
+
+        <i class="fa fa-heart{{ $card['isInFavorites'] }}"></i>
+
+    </div>
     
     
 
