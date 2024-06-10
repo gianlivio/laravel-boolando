@@ -19,6 +19,18 @@
         <p>
             {{ $card['name']}}
         </p>
+        
+        <ul>
+            @foreach (array_reverse($card['badges']) as $badge)
+
+                <li class="{{ $badge['type'] === 'tag' ? 'bg-success' : 'bg-danger' }}">
+
+                    {{ $badge['value']}} 
+
+                </li>
+
+            @endforeach
+        </ul>
 
         <p>
             {{ $card['brand'] }}
